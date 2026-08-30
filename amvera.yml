@@ -1,0 +1,12 @@
+meta:
+  environment: python
+  toolchain:
+    name: pip
+    version: "3.12"
+
+build:
+  requirementsPath: requirements.txt
+
+run:
+  command: celery --app worker worker --loglevel=INFO --concurrency=1
+
