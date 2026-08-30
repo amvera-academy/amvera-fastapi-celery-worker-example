@@ -4,7 +4,7 @@
 
 Worker не зависит от FastAPI, Flask или Django. Он получает задачу `process_text` через Redis и возвращает переданную строку в верхнем регистре.
 
-[ОБЩАЯ ИНСТРУКЦИЯ ПО CELERY](https://github.com/amvera-services/amvera-fastapi-example/blob/main/CELERY.md) | [КАК ЗАПУСТИТЬ НА AMVERA](#деплой-в-amvera)
+[ОБЩАЯ ИНСТРУКЦИЯ ПО CELERY](https://github.com/amvera-academy/amvera-fastapi-example/blob/main/CELERY.md) | [КАК ЗАПУСТИТЬ НА AMVERA](#деплой-в-amvera)
 
 ## Локальный запуск
 
@@ -20,4 +20,4 @@ celery --app worker worker --loglevel=INFO --concurrency=1
 
 Создайте Redis и отдельное приложение для worker в одном регионе, загрузите этот репозиторий и добавьте переменную `REDIS_URL`.
 
-Полная схема подключения и пример отправки задачи описаны в общей [инструкции по Celery](https://github.com/amvera-services/amvera-fastapi-example/blob/main/CELERY.md).
+Полная схема подключения и пример отправки задачи описаны в общей [инструкции по Celery](https://github.com/amvera-academy/amvera-fastapi-example/blob/main/CELERY.md).
